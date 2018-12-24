@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.widget.NestedScrollView
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            />
+
+        <LinearLayout
+            android:paddingTop="8dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            app:cardElevation="4dp"
+            app:cardMaxElevation="6dp"
+            android:id="@+id/pesan"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@drawable/icon_pesanan_gas"
+                    android:layout_width="40dp"
+                    android:layout_height="60dp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginRight="30dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/top"
+                            android:layout_width="match_parent"
+                            android:textAlignment="textStart"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="#808080"
+                            android:text="Pesan Gas"
+                            android:padding="1dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start" />
+
+                        <TextView
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/bottom"
+                            android:layout_below="@id/top"
+                            android:layout_width="match_parent"
+                            android:textAlignment="textStart"
+                            android:textColor="#666"
+                            android:textSize="12dp"
+                            android:padding="1dp"
+                            android:text="Pesan bright gas 5.5kg dan 12kg"
+                            android:layout_height="wrap_content"
+                            android:gravity="start" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                app:cardElevation="4dp"
+                app:cardMaxElevation="6dp"
+                android:id="@+id/lapor"
+                app:cardCornerRadius="10dp"
+                app:cardUseCompatPadding="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="28dp"
+                        android:background="@drawable/icon_laporkan_kejadian"
+                        android:layout_width="40dp"
+                        android:layout_height="50dp" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_centerVertical="true"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="30dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:id="@+id/top1"
+                                android:layout_width="match_parent"
+                                android:textAlignment="textStart"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="#808080"
+                                android:text="Laporan Konsumen"
+                                android:padding="1dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="start" />
+
+                            <TextView
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:id="@+id/bottom2"
+                                android:layout_below="@id/top1"
+                                android:layout_width="match_parent"
+                                android:textAlignment="textStart"
+                                android:textColor="#666"
+                                android:textSize="12dp"
+                                android:padding="1dp"
+                                android:text="Laporkan untuk ditindaklanjuti"
+                                android:layout_height="wrap_content"
+                                android:gravity="start" />
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

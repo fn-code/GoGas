@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.funcode.funcode.gasku.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/foto"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="false"
+                android:clickable="?android:attr/windowOverscan"
+                android:cropToPadding="true"
+                android:elevation="2dp"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/icon_pesanan_gas" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                android:focusedByDefault="true"
+                android:hint="Keterangan"
+                android:inputType="text"
+                android:padding="@dimen/activity_horizontal_margin" />
+
+
+            <Button
+                android:id="@+id/simpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                android:backgroundTint="@color/colorPrimary"
+                android:paddingBottom="18dp"
+                android:paddingLeft="18dp"
+                android:paddingTop="18dp"
+                android:text="Laporkan"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

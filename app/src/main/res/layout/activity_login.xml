@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.funcode.funcode.gasku.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.63">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/logo"
+                android:layout_width="220dp"
+                android:layout_height="180dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="@dimen/activity_vertical_margin"
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:paddingLeft="18dp"
+        android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+        android:drawableLeft="@drawable/googleg_standard_color_18"
+        android:text="MASUK DENGAN GOOGLE"
+        android:textColor="#333333" />
+
+
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:textSize="11dp"
+            android:textAlignment="center"
+            android:text="Pilih akun gmail yang akan anda gunakan login ke aplikasi Brightgas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_gravity="bottom"
+        android:background="@drawable/spash_screen"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.funcode.funcode.gasku.KonfirmasiPesananActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="8pt"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="Konfirmasi Pesanan"/>
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:padding="12dp"
+            android:id="@+id/daftarpesan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/detail"
+        android:fillViewport="true"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        android:layout_height="wrap_content">
+
+
+
+        <android.support.v7.widget.CardView
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="4dp"
+                            android:background="#f6f6f6" />
+
+                        <TableLayout
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:layout_width="match_parent"
+                            android:stretchColumns="*"
+                            android:shrinkColumns="*"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="30dp"
+                                    android:layout_height="match_parent">
+                                <ImageView
+                                    android:background="@drawable/locasi"
+                                    android:layout_centerVertical="true"
+                                    android:layout_width="20dp"
+                                    android:layout_height="25dp" />
+                                </RelativeLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:padding="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="12dp"
+                                    android:id="@+id/palamat"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:text="Alamat Anda" />
+
+                                <TextView
+                                    android:text="Alamat"
+                                    android:textSize="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_columnWeight="1"
+                                    android:id="@+id/alamat"/>
+                            </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#f6f6f6" />
+                            </LinearLayout>
+
+
+                            <TableRow
+                                android:layout_width="0dp"
+                                android:layout_height="0dp">
+
+
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_height="match_parent"
+                                    android:layout_width="0dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="30dp"
+                                        android:layout_height="match_parent">
+                                        <ImageView
+                                            android:background="@drawable/tarifantar"
+                                            android:layout_centerVertical="true"
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp" />
+                                    </RelativeLayout>
+
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <View
+                                            android:layout_width="1dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_alignParentRight="true"
+                                            android:background="#f6f6f6" />
+
+
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:padding="8dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:textSize="12dp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:textStyle="bold"
+                                                android:text="Tarif Antar" />
+
+                                            <TextView
+                                                android:textSize="10dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_columnWeight="1"
+                                                android:id="@+id/tarifAntar"/>
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_width="0dp">
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:padding="8dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textStyle="bold"
+                                            android:textSize="12dp"
+                                            android:layout_gravity="right"
+                                            android:lineSpacingExtra="@dimen/activity_horizontal_margin"
+                                            android:text="Total Bayar" />
+
+                                        <TextView
+                                            android:textSize="10dp"
+                                            android:layout_width="wrap_content"
+                                            android:textAlignment="textEnd"
+                                            android:layout_gravity="end"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/totbayar"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                            </TableRow>
+
+
+
+                            <LinearLayout
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#f6f6f6" />
+                            </LinearLayout>
+
+
+
+                        </TableLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            app:cardElevation="2dp"
+            android:id="@+id/konfirmasi"
+            app:cardUseCompatPadding="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:text="KONFIRMASI PESANAN"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            app:cardElevation="2dp"
+            android:id="@+id/batal"
+            app:cardUseCompatPadding="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:text="BATALKAN PESANAN"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
